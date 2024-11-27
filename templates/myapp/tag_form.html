@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Tag Form{% endblock %}
+
+{% block content %}
+<h1>{{ tag.id|default:"Create New Tag" }}</h1>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a href="{% url 'myapp:tag-list' %}" class="btn btn-secondary">Cancel</a>
+</form>
+{% endblock %}
