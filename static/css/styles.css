@@ -1,0 +1,16 @@
+.sidebar {
+    float: left;
+    width: 20%;
+    background: #f8f9fa;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.content {
+    margin-left: 22%;
+    padding: 20px;
+}
+
+.btn {
+    margin-right: 5px;
+}
